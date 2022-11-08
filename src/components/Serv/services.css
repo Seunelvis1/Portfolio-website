@@ -1,0 +1,122 @@
+.container.services-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+  align-items: center;
+  justify-content: center;
+}
+
+.service {
+  background: var(--color-bg-variant);
+  /* border-radius: 0 0 2rem 2rem; */
+  border: 1px solid var(--color-primary);
+  height: fit-content;
+  transition: var(--transition);
+  margin: 1rem 0;
+}
+
+/* .service:hover {
+    background: transparent;
+    border-color: var(--color-bg-variant);
+    cursor: default;
+} */
+.service__head {
+  background: var(--color-primary);
+  padding: 2rem;
+  /* border-radius: 0 0 2rem 2rem; */
+  box-shadow: 0 2rem 1rem rgba(0.1);
+}
+
+.service__head h3,
+p {
+  /* color: white; */
+  font-size: 2rem;
+  text-align: center;
+}
+.service__list {
+  padding: 2rem;
+}
+.service__list li {
+  display: flex;
+  gap: 1rem;
+  /* margin-bottom: 0.8rem;  */
+}
+.service__list-icon {
+  color: var(--color-primary);
+  margin-top: 2px;
+}
+.service__list p {
+  font-size: 0.9rem;
+  color: white;
+}
+
+/* .Service-content {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, auto));
+  grid-auto-flow: column;
+  grid-gap: 2rem;
+  align-items: center;
+  justify-content: center;
+  margin-top: 4.4rem;
+  margin-left: 5rem;
+} */
+.row {
+  background: var(--color-bg-variant);
+  padding: 40px 15px;
+  border-radius: 15px;
+  cursor: pointer;
+  transition: all 0.4s;
+}
+.row i {
+  color: var(--color-bg);
+  font-size: 3rem;
+  margin-bottom: 20px;
+}
+
+.row h2 {
+  font-size: 1.25rem;
+  font-weight: 500;
+  margin-bottom: 20px;
+  color: var(--text-color);
+  text-align: center;
+}
+.row p {
+  font-size: 18px;
+  color: var(--2nd-main-color);
+  line-height: 30px;
+}
+.row:hover {
+  transform: translateY(-15px);
+  box-shadow: 0px 15px 30px 0px rgb(0 0 0/ 70%);
+}
+
+/* .Modal-background{ */
+/* width: 200px;
+    height: 40px;
+    border: none;
+    border-radius: 6px;
+    background-color: ;
+  } */
+/* * Media Queries (Medium Devices) */
+
+@media screen and (max-width: 1024px) {
+  .container.services-container {
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+    margin: 0 auto;
+    align-items: center;
+    justify-content: center;
+  }
+  .service {
+    height: auto;
+  }
+}
+
+/* * Media Queries (Medium Devices) */
+
+@media screen and (max-width: 600px) {
+  .container.services-container {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+}
